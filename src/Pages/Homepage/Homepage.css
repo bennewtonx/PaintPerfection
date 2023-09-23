@@ -1,0 +1,68 @@
+/*Banner CSS*/
+
+.banner-container {
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+/*Services CSS*/
+
+.hp-services-container {
+    height: 100vh;
+    background-color: rgb(237, 237, 237);
+
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-areas:
+    'interior-text exterior-text'
+    'interior-image exterior-image';
+}
+
+.hp-interior-text {
+    width: 50%;
+    margin: 5% 0 0 10%;
+    padding: 0 40% 0 0;
+    text-align: center;
+    grid-area: interior-text;
+
+    border-right: solid;
+    border-color: rgba(148, 147, 147, 0.597);
+}
+
+.hp-interior-image {
+    width: 50%;
+    margin: 0 0 5% 10%;
+    padding: 0 40% 0 0;
+    text-align: center;
+    grid-area: interior-image;
+
+    border-right: solid;
+    border-color: rgba(148, 147, 147, 0.597);
+}
+
+.hp-exterior-text {
+    width: 50%;
+    margin: 5% 10% 0 0;
+    padding: 0 0 0 40%;
+    text-align: center;
+    grid-area: exterior-text;
+}
+
+.hp-exterior-image {
+    width: 50%;
+    margin: 0 0 5% 0;
+    padding: 0 0 0 40%;
+    text-align: center;
+    grid-area: exterior-image;
+}
+
+/*Reviews CSS*/
+
+.hp-reviews-container {
+    height: 100vh;
+    background-color: brown;
+}
