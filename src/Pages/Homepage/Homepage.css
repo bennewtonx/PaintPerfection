@@ -573,13 +573,14 @@
   }
 
   .overview-container {
-    display: block;
+    display: flex;
+    justify-content: center;
     height: fit-content;
   }
   
   .overview-text {
-      width: 300px;
-      margin: 0;
+      width: 400px;
+      margin-left: 35%;
   }
   
   .overview-heading{
@@ -588,7 +589,7 @@
   
   .overview-text p {
       font-size: 18px;
-      text-align: center;
+      text-align: center;  
   }
   
   .stats-container {
