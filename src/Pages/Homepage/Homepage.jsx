@@ -7,8 +7,17 @@ import { motion, useScroll } from 'framer-motion';
 import './Homepage.css'
 
 function Homepage() {
+
     const { scrollY, scrollYProgress } = useScroll(); // Track scroll position and progress
 
+    const scrollToOverview = () => {
+        const overviewContainer = document.querySelector('.overview-container');
+        
+        if (overviewContainer) {
+          overviewContainer.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+      
   return (
     <div className='homepage-container'>
         <CustomScrollbar scrollYProgress={scrollYProgress} />
@@ -17,7 +26,7 @@ function Homepage() {
             <div className='banner-text'>
                 <p className='banner-name'>Paint Perfection</p>
             <h1>Transform your space today</h1>
-            <button className='banner-button'>Get Started</button>
+            <a className='banner-button' onClick={scrollToOverview}>Get Started</a>
             </div>
             </ScrollAnimation>
             <ScrollAnimationLeft threshold={0.5}>
@@ -74,7 +83,7 @@ function Homepage() {
             </ScrollAnimation>
             <ScrollAnimationLeft threshold={0.5}>
             <div className='service-two'>
-                <img className='service-one-img' src='/Screenshot_20230922-144545.png'/>
+                <img className='service-two-img' src='/Screenshot_20230922-144545.png'/>
                 <h3>Exterior</h3>
                 <p>A home is only as good as the exterior. Why settle for anything 
                     less than your dream aesthetic. We will provide a 5* service to 
