@@ -53,20 +53,6 @@ function Homepage() {
                 businesses in-and-around Newcastle 
                 seeking the highest quality painting service.
             </p>
-            <div className='stats-container'>
-                <div className='jobs-done'>
-                    <h1>43</h1>
-                    <p>Jobs done</p>
-                </div>
-                <div className='jobs-done'>
-                    <h1>43</h1>
-                    <p>Homes Transformed</p>
-                </div>
-                <div className='jobs-done'>
-                    <h1>41</h1>
-                    <p>5* Reviews</p>
-                </div>
-            </div>
             </div>
             </ScrollAnimationMiddle>
         </div>
