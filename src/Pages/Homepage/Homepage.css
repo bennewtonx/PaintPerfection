@@ -213,9 +213,7 @@
 
 .stats-container {
     display: flex;
-    justify-content: start;
-    margin-bottom: 20px;
-    
+    justify-content: start;    
 }
 
 .jobs-done {
@@ -233,6 +231,7 @@
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .service-one {
