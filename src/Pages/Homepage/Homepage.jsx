@@ -4,6 +4,7 @@ import ScrollAnimationMiddle from '../../Components/ScrollAnimationMiddle'
 import ScrollAnimation from '../../Components/ScrollAnimation'
 import CustomScrollbar from '../../Components/CustomScrollbar'
 import { motion, useScroll } from 'framer-motion';
+import { BsFacebook } from 'react-icons/bs'
 import './Homepage.css'
 
 function Homepage() {
@@ -24,7 +25,7 @@ function Homepage() {
         <div className='banner-container'>
             <ScrollAnimation threshold={0.5}>
             <div className='banner-text'>
-                <p className='banner-name'>Paint Perfection</p>
+                <a className='banner-name' href='https://www.facebook.com/profile.php?id=100087928365920'>Paint Perfection<BsFacebook className='name-icon'/></a>
             <h1>Transform your space today</h1>
             <a className='banner-button' onClick={scrollToOverview}>Get Started</a>
             </div>
@@ -109,7 +110,7 @@ function Homepage() {
                 <p className='contact-message'>Experience the difference a professional painter can 
                     make in your space. Contact us today to start your 
                     painting project. </p>
-                <h3>04750375784</h3>
+                <h3>07935179361</h3>
             </div>
             </ScrollAnimationMiddle>
         </div>

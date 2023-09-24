@@ -28,17 +28,34 @@
 }
 
 .banner-text {
+    height: fit-content;
     width: 700px;
     transform: translateX(-150%); /* Start off-screen */
 }
 
+.banner-name-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
 .banner-name {
+    color: black;
     width: fit-content;
     padding: 10px;
     margin-bottom: -50px;
     border: solid;
     border-width: 0.1px;
     border-radius: 20px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+  }
+
+.name-icon {
+    margin-left: 10px;
 }
 
 .banner-text h1{
@@ -47,7 +64,6 @@
 }
 
 .banner-button {
-    color: #2C0703;
     padding: 20px 40px;
     border: none;
     border-radius: 40px;
