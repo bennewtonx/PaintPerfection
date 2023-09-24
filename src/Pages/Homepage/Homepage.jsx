@@ -73,7 +73,7 @@ function Homepage() {
         <div className='services-container'>
             <ScrollAnimation threshold={0.5}>
             <div className='service-one'>
-                <img className='service-one-img' src='public\Screenshot_20230922-144211 (1).png'/>
+                <img className='service-one-img' src='/Screenshot_20230922-144211 (1).png'/>
                 <h3>Interior</h3>
                 <p>Our expertise will give your homes interior the glow-up it 
                     deserves! Whether only one room needs a splash of colour or you 
